@@ -67,7 +67,7 @@ export default function Contact() {
     {
       icon: Phone,
       title: "Phone",
-      value: "+91 90000 00103",
+      value: "+91 70484 72472",
       description: "Available 24/7 for bookings and inquiries"
     },
     {
@@ -104,8 +104,11 @@ export default function Contact() {
               and quick response times to ensure your transportation requirements are met efficiently.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-krishna-gold text-krishna-black hover:bg-yellow-500 px-8 py-4 text-lg">
-                Call Now: +91 90000 00103
+              <Button 
+                className="bg-krishna-gold text-krishna-black hover:bg-yellow-500 px-8 py-4 text-lg"
+                onClick={() => window.open('tel:+917048472472', '_self')}
+              >
+                Call Now: +91 70484 72472
               </Button>
               <Button 
                 variant="outline" 
@@ -337,9 +340,12 @@ export default function Contact() {
                   </p>
                   
                   <div className="space-y-4">
-                    <Button className="w-full bg-krishna-gold text-krishna-black hover:bg-yellow-500">
+                    <Button 
+                      className="w-full bg-krishna-gold text-krishna-black hover:bg-yellow-500"
+                      onClick={() => window.open('tel:+917048472472', '_self')}
+                    >
                       <Phone className="w-4 h-4 mr-2" />
-                      Call +91 90000 00103
+                      Call +91 70484 72472
                     </Button>
                     
                     <Button variant="outline" className="w-full border-krishna-gold text-krishna-gold hover:bg-krishna-gold hover:text-krishna-black">

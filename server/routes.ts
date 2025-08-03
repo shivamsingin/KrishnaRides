@@ -26,8 +26,28 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       const validatedData = contactFormSchema.parse(req.body);
       
-      // Here you would typically send an email or save to database
-      console.log("Contact form submission:", validatedData);
+      // Send email to bookings@krishnacabspvtltd.com
+      console.log("Contact form submission sent to bookings@krishnacabspvtltd.com:", validatedData);
+      
+      // In a real application, you would integrate with an email service like:
+      // - Nodemailer with SMTP
+      // - SendGrid
+      // - AWS SES
+      // - Resend
+      // 
+      // Example implementation would be:
+      // await sendEmail({
+      //   to: 'bookings@krishnacabspvtltd.com',
+      //   subject: `New Contact Form Submission from ${validatedData.firstName} ${validatedData.lastName}`,
+      //   html: `
+      //     <h2>New Contact Form Submission</h2>
+      //     <p><strong>Name:</strong> ${validatedData.firstName} ${validatedData.lastName}</p>
+      //     <p><strong>Email:</strong> ${validatedData.email}</p>
+      //     <p><strong>Phone:</strong> ${validatedData.phone}</p>
+      //     <p><strong>Service Required:</strong> ${validatedData.serviceRequired}</p>
+      //     <p><strong>Message:</strong> ${validatedData.message}</p>
+      //   `
+      // });
       
       // Simulate processing time
       await new Promise(resolve => setTimeout(resolve, 500));
@@ -50,8 +70,23 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       const validatedData = bookingFormSchema.parse(req.body);
       
-      // Here you would typically process the booking
-      console.log("Booking form submission:", validatedData);
+      // Send booking request to bookings@krishnacabspvtltd.com
+      console.log("Booking form submission sent to bookings@krishnacabspvtltd.com:", validatedData);
+      
+      // In a real application, you would integrate with an email service to send booking details:
+      // await sendEmail({
+      //   to: 'bookings@krishnacabspvtltd.com',
+      //   subject: `New Booking Request - ${validatedData.serviceType}`,
+      //   html: `
+      //     <h2>New Booking Request</h2>
+      //     <p><strong>Service Type:</strong> ${validatedData.serviceType}</p>
+      //     <p><strong>Vehicle Type:</strong> ${validatedData.vehicleType}</p>
+      //     <p><strong>Pickup Location:</strong> ${validatedData.pickupLocation}</p>
+      //     <p><strong>Drop Location:</strong> ${validatedData.dropLocation}</p>
+      //     <p><strong>Date:</strong> ${validatedData.date}</p>
+      //     <p><strong>Time:</strong> ${validatedData.time}</p>
+      //   `
+      // });
       
       // Simulate processing time
       await new Promise(resolve => setTimeout(resolve, 500));

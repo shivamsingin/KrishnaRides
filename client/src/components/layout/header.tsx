@@ -61,10 +61,10 @@ export default function Header() {
           <div className="flex items-center space-x-4">
             <button 
               className="hidden lg:flex items-center text-krishna-gold font-semibold hover:text-yellow-300 transition-colors"
-              onClick={() => window.open('tel:+919000000103', '_self')}
+              onClick={() => window.open('tel:+917048472472', '_self')}
             >
               <Phone className="w-4 h-4 mr-2" />
-              +91 90000 00103
+              +91 70484 72472
             </button>
             
             {/* Mobile Menu Button */}
