@@ -249,6 +249,7 @@ export default function Fleet() {
             <Button 
               variant="outline" 
               className="border-2 border-krishna-gold text-krishna-gold hover:bg-krishna-gold hover:text-krishna-black px-8 py-4 text-lg"
+              onClick={() => window.open('tel:+919000000103', '_self')}
             >
               Call +91 90000 00103
             </Button>

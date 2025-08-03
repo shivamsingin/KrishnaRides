@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Users, Luggage, Fuel } from "lucide-react";
+import { Link } from "wouter";
 
 interface FleetCardProps {
   name: string;
@@ -62,9 +63,11 @@ export default function FleetCard({
           <span className="text-2xl font-bold text-krishna-black">
             ₹{pricePerKm}/km
           </span>
-          <Button className="bg-krishna-gold text-krishna-black hover:bg-yellow-500">
-            Book Now
-          </Button>
+          <Link href="/contact">
+            <Button className="bg-krishna-gold text-krishna-black hover:bg-yellow-500">
+              Book Now
+            </Button>
+          </Link>
         </div>
       </CardContent>
     </Card>

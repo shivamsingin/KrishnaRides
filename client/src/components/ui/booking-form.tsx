@@ -38,12 +38,22 @@ export default function BookingForm() {
   const onSubmit = async (data: BookingFormData) => {
     setIsSubmitting(true);
     try {
-      // Here you would typically send the data to your backend
-      console.log("Booking data:", data);
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      alert("Thank you for your booking request! We will contact you shortly.");
-      form.reset();
+      const response = await fetch('/api/booking', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        alert("Thank you for your booking request! We will contact you shortly with available options.");
+        form.reset();
+      } else {
+        alert(result.message || "There was an error submitting your booking. Please try again.");
+      }
     } catch (error) {
       console.error("Booking error:", error);
       alert("There was an error submitting your booking. Please try again.");

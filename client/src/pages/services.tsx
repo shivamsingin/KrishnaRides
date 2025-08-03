@@ -203,9 +203,11 @@ export default function Services() {
                 <li>• Fuel charges included</li>
                 <li>• Toll charges extra</li>
               </ul>
-              <Button className="w-full bg-krishna-gold text-krishna-black hover:bg-yellow-500">
-                Book Local Transfer
-              </Button>
+              <Link href="/contact">
+                <Button className="w-full bg-krishna-gold text-krishna-black hover:bg-yellow-500">
+                  Book Local Transfer
+                </Button>
+              </Link>
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-lg text-center border-2 border-krishna-gold">
@@ -220,9 +222,11 @@ export default function Services() {
                 <li>• 30 minutes waiting free</li>
                 <li>• Meet & greet service</li>
               </ul>
-              <Button className="w-full bg-krishna-gold text-krishna-black hover:bg-yellow-500">
-                Book Airport Transfer
-              </Button>
+              <Link href="/contact">
+                <Button className="w-full bg-krishna-gold text-krishna-black hover:bg-yellow-500">
+                  Book Airport Transfer
+                </Button>
+              </Link>
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-lg text-center">
@@ -234,9 +238,11 @@ export default function Services() {
                 <li>• Multiple day packages</li>
                 <li>• Custom itinerary support</li>
               </ul>
-              <Button className="w-full bg-krishna-gold text-krishna-black hover:bg-yellow-500">
-                Plan Outstation Trip
-              </Button>
+              <Link href="/contact">
+                <Button className="w-full bg-krishna-gold text-krishna-black hover:bg-yellow-500">
+                  Plan Outstation Trip
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

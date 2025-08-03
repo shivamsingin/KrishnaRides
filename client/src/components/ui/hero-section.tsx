@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 import BookingForm from "./booking-form";
 
 export default function HeroSection() {
@@ -27,15 +28,19 @@ export default function HeroSection() {
               airport transfers, and outstation journeys across Gujarat.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-krishna-gold text-krishna-black hover:bg-yellow-500 px-8 py-4 text-lg">
-                Book Now
-              </Button>
-              <Button 
-                variant="outline" 
-                className="border-2 border-krishna-gold text-krishna-gold hover:bg-krishna-gold hover:text-krishna-black px-8 py-4 text-lg"
-              >
-                View Fleet
-              </Button>
+              <Link href="/contact">
+                <Button className="bg-krishna-gold text-krishna-black hover:bg-yellow-500 px-8 py-4 text-lg">
+                  Book Now
+                </Button>
+              </Link>
+              <Link href="/fleet">
+                <Button 
+                  variant="outline" 
+                  className="border-2 border-krishna-gold text-krishna-gold hover:bg-krishna-gold hover:text-krishna-black px-8 py-4 text-lg"
+                >
+                  View Fleet
+                </Button>
+              </Link>
             </div>
           </div>
 
