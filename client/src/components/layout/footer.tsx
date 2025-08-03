@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { Facebook, Instagram, Linkedin, MessageCircle } from "lucide-react";
+import logoImage from "@assets/logo_1754260864219.jpg";
 
 export default function Footer() {
   return (
@@ -9,9 +10,11 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-krishna-gold rounded-full flex items-center justify-center">
-                <span className="text-krishna-black font-bold">KC</span>
-              </div>
+              <img 
+                src={logoImage} 
+                alt="Krishna Cabs Logo" 
+                className="w-10 h-10 object-contain"
+              />
               <div>
                 <h3 className="font-bold text-lg">Krishna Cabs</h3>
                 <p className="text-krishna-gold text-sm">Pvt Ltd</p>

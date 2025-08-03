@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoImage from "@assets/logo_1754260864219.jpg";
 
 export default function Header() {
   const [location] = useLocation();
@@ -33,9 +34,11 @@ export default function Header() {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-12 h-12 bg-krishna-gold rounded-full flex items-center justify-center">
-              <span className="text-krishna-black font-bold text-xl">KC</span>
-            </div>
+            <img 
+              src={logoImage} 
+              alt="Krishna Cabs Logo" 
+              className="w-12 h-12 object-contain"
+            />
             <div>
               <h1 className="font-bold text-xl text-white">Krishna Cabs</h1>
               <p className="text-krishna-gold text-sm">Pvt Ltd</p>
