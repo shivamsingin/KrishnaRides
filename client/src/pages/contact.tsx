@@ -227,7 +227,6 @@ Krishna Cabs Website
           </div>
         </div>
       </section>
-
       {/* Contact Information */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -257,7 +256,6 @@ Krishna Cabs Website
 
         </div>
       </section>
-
       {/* Contact Form & Map */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -265,7 +263,7 @@ Krishna Cabs Website
             {/* Contact Form */}
             <Card>
               <CardHeader>
-                <CardTitle className="text-2xl text-krishna-black">Send us a Message</CardTitle>
+                <CardTitle className="text-2xl text-krishna-black">Need a Cab? Book Now</CardTitle>
               </CardHeader>
               <CardContent>
                 <Form {...form}>
@@ -618,7 +616,6 @@ Krishna Cabs Website
           </div>
         </div>
       </section>
-
       {/* FAQ Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
