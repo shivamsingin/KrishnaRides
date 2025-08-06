@@ -4,6 +4,9 @@ import FleetCard from "@/components/ui/fleet-card";
 import { Car, Plane, MapPin, Route } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import rajeshPatelImage from "@assets/generated_images/Indian_businessman_headshot_78ece5c4.png";
+import priyaSharmaImage from "@assets/generated_images/Indian_businesswoman_headshot_839e61ec.png";
+import amitDesaiImage from "@assets/generated_images/Indian_executive_headshot_b3f7199e.png";
 
 export default function Home() {
   const services = [
@@ -149,19 +152,19 @@ export default function Home() {
               {
                 name: "Rajesh Patel",
                 role: "Business Executive",
-                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+                image: rajeshPatelImage,
                 text: "Excellent service with well-maintained cars and professional drivers. As a business executive, I rely on Krishna Cabs for all my important meetings and airport transfers. They are always punctual and reliable."
               },
               {
                 name: "Priya Sharma",
                 role: "Corporate Manager",
-                image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+                image: priyaSharmaImage,
                 text: "Outstanding professional service! I've been using Krishna Cabs for corporate travel for over two years. Their attention to detail and commitment to customer satisfaction is remarkable. Highly recommended!"
               },
               {
                 name: "Amit Desai",
                 role: "Senior Manager",
-                image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+                image: amitDesaiImage,
                 text: "Perfect for outstation business trips! The vehicles are immaculate, drivers are courteous and knowledgeable. Krishna Cabs has become an integral part of our company's travel arrangements."
               }
             ].map((testimonial, index) => (
