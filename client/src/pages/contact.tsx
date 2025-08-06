@@ -336,10 +336,7 @@ Krishna Cabs Website
                       Call +91 70484 72472
                     </Button>
                     
-                    <Button variant="outline" className="w-full border-krishna-gold text-krishna-gold hover:bg-krishna-gold hover:text-krishna-black">
-                      <MessageCircle className="w-4 h-4 mr-2" />
-                      WhatsApp Booking
-                    </Button>
+
                     
                     <Button 
                       variant="outline" 
