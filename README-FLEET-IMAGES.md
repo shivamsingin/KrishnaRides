@@ -31,7 +31,7 @@ The Krishna Cabs fleet images are managed through the `vehicleImages` configurat
 - `innova-crysta` - Toyota Innova Crysta (official Toyota India image)  
 - `rumion` - Toyota Rumion (official Toyota India image)
 - `honda-city` - Honda City (official Honda India image)
-- `honda-amaze` - Honda Amaze
+- `honda-amaze` - Honda Amaze (official Honda India image)
 - `maruti-ertiga` - Maruti Ertiga (official Maruti Suzuki image)
 - `maruti-dzire` - Maruti Dzire (official Maruti Suzuki image)
 - `hyundai-aura` - Hyundai Aura

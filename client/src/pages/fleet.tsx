@@ -17,7 +17,7 @@ const vehicleImages = {
   
   // Honda Models
   "honda-city": "https://www.hondacarindia.com/_next/image?url=https%3A%2F%2Fwww.hondacarindia.com%2Fweb-data%2Fmodels%2F2023%2Fcity5thGen%2FExperience%2FColors%2B%2FColors%2FDesktop%2FAr_Vk_Honda-City_3TX_Front-3-4th-Studio-Shot_Lunar-Silver-Metallic_V2.png&w=3840&q=75", // Official Honda India image
-  "honda-amaze": "https://imgd.aeplcdn.com/1056x594/n/cw/ec/183381/amaze-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+  "honda-amaze": "https://www.hondacarindia.com/_next/image?url=https%3A%2F%2Fwww.hondacarindia.com%2Fweb-data%2Fmodels%2F2024%2FnewAmaze%2Fexterior360Desktop%2FAMAZE_EXT_360_LUNAR_SILVER_METALLIC_V-3__00009%201_chooseCar.png&w=3840&q=75", // Official Honda India image
   
   // Maruti Models
   "maruti-ertiga": "https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:265561bc-ef08-4c21-adb0-207a8cf1bd75/as/Dynamic-Chrome-Winged-Front-Grille_2560x1440.jpg?height=1440&width=750&id=1&preferwebp=true", // Official Maruti Suzuki image
