@@ -11,7 +11,7 @@ import { Link } from "wouter";
 
 const vehicleImages = {
   // Toyota Models
-  "innova-hycross": "https://imgd.aeplcdn.com/1056x594/n/cw/ec/139651/innova-hycross-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+  "innova-hycross": "https://static3.toyotabharat.com/images/showroom/innova-hycross/performance-img05.webp",
   "innova-crysta": "https://imgd.aeplcdn.com/1056x594/n/cw/ec/26730/innova-crysta-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
   "rumion": "https://imgd.aeplcdn.com/1056x594/n/cw/ec/115145/rumion-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
   
