@@ -29,7 +29,7 @@ The Krishna Cabs fleet images are managed through the `vehicleImages` configurat
 ### Current Vehicle Image Keys
 - `innova-hycross` - Toyota Innova Hycross (official Toyota India image)
 - `innova-crysta` - Toyota Innova Crysta  
-- `rumion` - Toyota Rumion
+- `rumion` - Toyota Rumion (official Toyota India image)
 - `honda-city` - Honda City (official Honda India image)
 - `honda-amaze` - Honda Amaze
 - `maruti-ertiga` - Maruti Ertiga
