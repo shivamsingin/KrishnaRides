@@ -22,7 +22,7 @@ export default function HeroSection() {
             <h1 className="font-bold text-5xl mb-6 leading-tight">
               Your Business Travel Support
             </h1>
-            <p className="text-xl mb-8 text-gray-100">
+            <p className="text-xl mb-8 text-white">
               Experience premium chauffeur-driven car rental services in Ahmedabad. 
               Reliable, safe, and comfortable transportation for business executives, 
               airport transfers, and outstation journeys across Gujarat.
