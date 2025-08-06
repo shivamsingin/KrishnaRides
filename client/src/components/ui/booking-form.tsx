@@ -12,10 +12,23 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 const bookingSchema = z.object({
   serviceType: z.string().min(1, "Please select a service type"),
   vehicleType: z.string().min(1, "Please select a vehicle type"),
-  pickupLocation: z.string().min(1, "Pickup location is required"),
-  dropLocation: z.string().min(1, "Drop location is required"),
-  date: z.string().min(1, "Date is required"),
-  time: z.string().min(1, "Time is required"),
+  pickupLocation: z.string()
+    .min(3, "Pickup location must be at least 3 characters")
+    .max(100, "Pickup location must be less than 100 characters"),
+  dropLocation: z.string()
+    .min(3, "Drop location must be at least 3 characters")
+    .max(100, "Drop location must be less than 100 characters"),
+  date: z.string()
+    .min(1, "Date is required")
+    .refine((date) => {
+      const selectedDate = new Date(date);
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      return selectedDate >= today;
+    }, "Date cannot be in the past"),
+  time: z.string()
+    .min(1, "Time is required")
+    .regex(/^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/, "Please enter a valid time format"),
 });
 
 type BookingFormData = z.infer<typeof bookingSchema>;
@@ -137,7 +150,11 @@ Krishna Cabs Website
                 <FormItem>
                   <FormLabel>Pickup Location</FormLabel>
                   <FormControl>
-                    <Input placeholder="Enter pickup location" {...field} />
+                    <Input 
+                      placeholder="e.g., Ahmedabad Airport, Hotel, Office address" 
+                      maxLength={100}
+                      {...field} 
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -151,7 +168,11 @@ Krishna Cabs Website
                 <FormItem>
                   <FormLabel>Drop Location</FormLabel>
                   <FormControl>
-                    <Input placeholder="Enter drop location" {...field} />
+                    <Input 
+                      placeholder="e.g., Gandhinagar, Vadodara, Business location" 
+                      maxLength={100}
+                      {...field} 
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -166,7 +187,11 @@ Krishna Cabs Website
                   <FormItem>
                     <FormLabel>Date</FormLabel>
                     <FormControl>
-                      <Input type="date" {...field} />
+                      <Input 
+                        type="date" 
+                        min={new Date().toISOString().split('T')[0]}
+                        {...field} 
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

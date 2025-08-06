@@ -11,12 +11,26 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 
 const contactSchema = z.object({
-  firstName: z.string().min(1, "First name is required"),
-  lastName: z.string().min(1, "Last name is required"),
-  email: z.string().email("Please enter a valid email address"),
-  phone: z.string().min(10, "Please enter a valid phone number"),
+  firstName: z.string()
+    .min(2, "First name must be at least 2 characters")
+    .max(50, "First name must be less than 50 characters")
+    .regex(/^[a-zA-Z\s]+$/, "First name can only contain letters and spaces"),
+  lastName: z.string()
+    .min(2, "Last name must be at least 2 characters")
+    .max(50, "Last name must be less than 50 characters")
+    .regex(/^[a-zA-Z\s]+$/, "Last name can only contain letters and spaces"),
+  email: z.string()
+    .min(1, "Email is required")
+    .email("Please enter a valid email address")
+    .toLowerCase(),
+  phone: z.string()
+    .min(10, "Phone number must be at least 10 digits")
+    .max(15, "Phone number must be less than 15 digits")
+    .regex(/^\+?[0-9\s\-\(\)]+$/, "Please enter a valid phone number"),
   serviceRequired: z.string().min(1, "Please select a service"),
-  message: z.string().min(10, "Please provide details about your requirements"),
+  message: z.string()
+    .min(10, "Message must be at least 10 characters")
+    .max(500, "Message must be less than 500 characters"),
 });
 
 type ContactFormData = z.infer<typeof contactSchema>;
@@ -176,7 +190,11 @@ Krishna Cabs Website
                           <FormItem>
                             <FormLabel>First Name *</FormLabel>
                             <FormControl>
-                              <Input placeholder="Enter first name" {...field} />
+                              <Input 
+                                placeholder="Enter first name" 
+                                maxLength={50}
+                                {...field} 
+                              />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -190,7 +208,11 @@ Krishna Cabs Website
                           <FormItem>
                             <FormLabel>Last Name *</FormLabel>
                             <FormControl>
-                              <Input placeholder="Enter last name" {...field} />
+                              <Input 
+                                placeholder="Enter last name" 
+                                maxLength={50}
+                                {...field} 
+                              />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -205,7 +227,11 @@ Krishna Cabs Website
                         <FormItem>
                           <FormLabel>Email Address *</FormLabel>
                           <FormControl>
-                            <Input type="email" placeholder="Enter email address" {...field} />
+                            <Input 
+                              type="email" 
+                              placeholder="e.g., your.name@company.com" 
+                              {...field} 
+                            />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -219,7 +245,12 @@ Krishna Cabs Website
                         <FormItem>
                           <FormLabel>Phone Number *</FormLabel>
                           <FormControl>
-                            <Input type="tel" placeholder="Enter phone number" {...field} />
+                            <Input 
+                              type="tel" 
+                              placeholder="e.g., +91 98765 43210 or 9876543210" 
+                              maxLength={15}
+                              {...field} 
+                            />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -259,8 +290,9 @@ Krishna Cabs Website
                           <FormLabel>Message *</FormLabel>
                           <FormControl>
                             <Textarea 
+                              placeholder="Please describe your requirements, travel dates, destinations, and any specific preferences..."
+                              maxLength={500}
                               rows={4} 
-                              placeholder="Please provide details about your travel requirements..."
                               {...field} 
                             />
                           </FormControl>
