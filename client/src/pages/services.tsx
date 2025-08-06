@@ -195,8 +195,7 @@ export default function Services() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-lg text-center">
-              <h3 className="font-bold text-2xl text-krishna-black mb-4">Local Transfers</h3>
-              <p className="text-4xl font-bold text-krishna-gold mb-4">₹12-28<span className="text-lg">/km</span></p>
+              <h3 className="font-bold text-2xl text-krishna-black mb-6">Local Transfers</h3>
               <ul className="text-gray-600 space-y-2 mb-6">
                 <li>• Minimum 4 hours booking</li>
                 <li>• Driver allowance included</li>
@@ -214,8 +213,7 @@ export default function Services() {
               <div className="bg-krishna-gold text-krishna-black px-4 py-1 rounded-full text-sm font-medium mb-4 inline-block">
                 Most Popular
               </div>
-              <h3 className="font-bold text-2xl text-krishna-black mb-4">Airport Transfers</h3>
-              <p className="text-4xl font-bold text-krishna-gold mb-4">₹800<span className="text-lg">+</span></p>
+              <h3 className="font-bold text-2xl text-krishna-black mb-6">Airport Transfers</h3>
               <ul className="text-gray-600 space-y-2 mb-6">
                 <li>• Fixed rates to/from airport</li>
                 <li>• Flight tracking included</li>
@@ -230,8 +228,7 @@ export default function Services() {
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-lg text-center">
-              <h3 className="font-bold text-2xl text-krishna-black mb-4">Outstation</h3>
-              <p className="text-4xl font-bold text-krishna-gold mb-4">₹15-35<span className="text-lg">/km</span></p>
+              <h3 className="font-bold text-2xl text-krishna-black mb-6">Outstation</h3>
               <ul className="text-gray-600 space-y-2 mb-6">
                 <li>• Minimum 300 km booking</li>
                 <li>• Driver night charges extra</li>
