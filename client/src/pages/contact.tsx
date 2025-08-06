@@ -28,6 +28,16 @@ const contactSchema = z.object({
     .max(15, "Phone number must be less than 15 digits")
     .regex(/^\+?[0-9\s\-\(\)]+$/, "Please enter a valid phone number"),
   serviceRequired: z.string().min(1, "Please select a service"),
+  travelDate: z.string()
+    .optional()
+    .refine((date) => {
+      if (!date) return true; // Optional field
+      const dateValue = new Date(date);
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      return !isNaN(dateValue.getTime()) && dateValue >= today;
+    }, "Travel date cannot be in the past"),
+  travelTime: z.string().optional(),
   message: z.string()
     .min(10, "Message must be at least 10 characters")
     .max(500, "Message must be less than 500 characters"),
@@ -46,6 +56,8 @@ export default function Contact() {
       email: "",
       phone: "",
       serviceRequired: "",
+      travelDate: "",
+      travelTime: "",
       message: "",
     },
   });
@@ -53,6 +65,16 @@ export default function Contact() {
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
     
+    // Format date to Indian format for email
+    const formatDateToIndian = (dateStr: string) => {
+      const date = new Date(dateStr);
+      return date.toLocaleDateString('en-IN', {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric'
+      });
+    };
+
     // Create email body with form data
     const emailSubject = `New Contact Form Submission from ${data.firstName} ${data.lastName}`;
     const emailBody = `
@@ -64,6 +86,8 @@ Name: ${data.firstName} ${data.lastName}
 Email: ${data.email}
 Phone: ${data.phone}
 Service Required: ${data.serviceRequired}
+${data.travelDate ? `Travel Date: ${formatDateToIndian(data.travelDate)}` : ''}
+${data.travelTime ? `Travel Time: ${data.travelTime}` : ''}
 
 Message:
 ${data.message}
@@ -282,6 +306,45 @@ Krishna Cabs Website
                       )}
                     />
 
+                    <div className="grid grid-cols-2 gap-4">
+                      <FormField
+                        control={form.control}
+                        name="travelDate"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel>Travel Date (Optional)</FormLabel>
+                            <FormControl>
+                              <Input 
+                                type="date" 
+                                min={new Date().toISOString().split('T')[0]}
+                                placeholder="DD/MM/YYYY"
+                                {...field} 
+                              />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+
+                      <FormField
+                        control={form.control}
+                        name="travelTime"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel>Travel Time (Optional)</FormLabel>
+                            <FormControl>
+                              <Input 
+                                type="time" 
+                                placeholder="HH:MM"
+                                {...field} 
+                              />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                    </div>
+
                     <FormField
                       control={form.control}
                       name="message"
@@ -290,7 +353,7 @@ Krishna Cabs Website
                           <FormLabel>Message *</FormLabel>
                           <FormControl>
                             <Textarea 
-                              placeholder="Please describe your requirements, travel dates, destinations, and any specific preferences..."
+                              placeholder="Please describe your requirements, destinations, vehicle preferences, and any specific needs..."
                               maxLength={500}
                               rows={4} 
                               {...field} 

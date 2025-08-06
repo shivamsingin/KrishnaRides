@@ -53,7 +53,7 @@ export default function BookingForm() {
     setIsSubmitting(true);
     
     // Format date to Indian format for email
-    const formatDateToIndian = (dateStr) => {
+    const formatDateToIndian = (dateStr: string) => {
       const date = new Date(dateStr);
       return date.toLocaleDateString('en-IN', {
         day: '2-digit',
