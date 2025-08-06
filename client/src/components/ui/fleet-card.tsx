@@ -29,9 +29,9 @@ export default function FleetCard({
 }: FleetCardProps) {
   return (
     <Card className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-      <img
-        src={image}
-        alt={`${name} - ${description}`}
+      <img 
+        src={https://static3.toyotabharat.com/images/showroom/innova-hycross/performance-img05.webp}
+        alt={`${toyota-hycross} - ${toyota-hycross}`}
         className="w-full h-48 object-cover"
       />
       <CardContent className="p-6">
