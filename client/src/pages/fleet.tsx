@@ -3,46 +3,67 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
 
+// Vehicle Images Configuration
+// To change any vehicle image:
+// 1. For online images: Replace the URL with any external image URL
+// 2. For local images: Place your image in attached_assets/ folder and use @assets/filename.jpg
+// 3. All images should be high quality, preferably 1056x594 pixels for consistency
+
+const vehicleImages = {
+  // Toyota Models
+  "innova-hycross": "https://imgd.aeplcdn.com/1056x594/n/cw/ec/139651/innova-hycross-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+  "innova-crysta": "https://imgd.aeplcdn.com/1056x594/n/cw/ec/26730/innova-crysta-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+  "rumion": "https://imgd.aeplcdn.com/1056x594/n/cw/ec/115145/rumion-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+  
+  // Honda Models
+  "honda-city": "@assets/960px-2019_Honda_City_SV_1754492139176.jpg", // Local asset - you can replace this file
+  "honda-amaze": "https://imgd.aeplcdn.com/1056x594/n/cw/ec/183381/amaze-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+  
+  // Maruti Models
+  "maruti-ertiga": "https://imgd.aeplcdn.com/1056x594/n/cw/ec/54399/ertiga-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+  "maruti-dzire": "https://imgd.aeplcdn.com/1056x594/n/cw/ec/174809/dzire-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+  
+  // Hyundai Models
+  "hyundai-aura": "https://imgd.aeplcdn.com/1056x594/n/cw/ec/45951/aura-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+};
+
 export default function Fleet() {
   const fleetVehicles = [
     {
       name: "Toyota Innova Hycross",
       category: "Premium",
       description: "The latest hybrid MPV offering exceptional fuel efficiency, spacious seating for seven passengers, advanced safety features, and premium comfort for long-distance business travel.",
-      image: "https://imgd.aeplcdn.com/1056x594/n/cw/ec/139651/innova-hycross-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+      image: vehicleImages["innova-hycross"],
       seats: 7,
       bags: 3,
       fuelType: "Hybrid",
-
       categoryColor: "bg-orange-500"
     },
     {
       name: "Toyota Innova Crysta",
       category: "Popular",
       description: "The trusted choice for business travel featuring robust build quality, comfortable seating, excellent road presence, and proven reliability for both city commuting and outstation journeys.",
-      image: "https://imgd.aeplcdn.com/1056x594/n/cw/ec/26730/innova-crysta-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+      image: vehicleImages["innova-crysta"],
       seats: 7,
       bags: 3,
       fuelType: "Diesel",
-
       categoryColor: "bg-green-500"
     },
     {
       name: "Honda City",
       category: "Executive",
       description: "Premium sedan perfect for executive travel and business meetings, offering refined comfort, advanced features, excellent fuel efficiency, and sophisticated design for professional image.",
-      image: "@assets/960px-2019_Honda_City_SV_1754492139176.jpg",
+      image: vehicleImages["honda-city"],
       seats: 5,
       bags: 2,
       fuelType: "Petrol",
-
       categoryColor: "bg-blue-500"
     },
     {
       name: "Honda Amaze",
       category: "Efficient",
       description: "Compact sedan ideal for city transfers and short-distance business trips, combining fuel efficiency with comfort, modern features, and reliable performance for economical yet comfortable transportation.",
-      image: "https://imgd.aeplcdn.com/1056x594/n/cw/ec/183381/amaze-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+      image: vehicleImages["honda-amaze"],
       seats: 5,
       bags: 2,
       fuelType: "Petrol",
@@ -52,7 +73,7 @@ export default function Fleet() {
       name: "Maruti Ertiga",
       category: "Versatile",
       description: "Versatile MPV perfect for group travel and family outings, offering spacious seven-seater configuration, excellent fuel economy, reliable performance, and comfortable ride quality for both city.",
-      image: "https://imgd.aeplcdn.com/1056x594/n/cw/ec/54399/ertiga-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+      image: vehicleImages["maruti-ertiga"],
       seats: 7,
       bags: 2,
       fuelType: "Petrol",
@@ -62,7 +83,7 @@ export default function Fleet() {
       name: "Hyundai Aura",
       category: "Modern",
       description: "Modern compact sedan featuring contemporary design, advanced connectivity features, comfortable interiors, and efficient engine options, making it ideal for business professionals seeking style and functionality.",
-      image: "https://imgd.aeplcdn.com/1056x594/n/cw/ec/45951/aura-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+      image: vehicleImages["hyundai-aura"],
       seats: 5,
       bags: 2,
       fuelType: "Petrol",
@@ -72,7 +93,7 @@ export default function Fleet() {
       name: "Toyota Rumion",
       category: "Practical",
       description: "Practical MPV designed for versatile transportation needs, offering generous space, comfortable seating arrangements, reliable Toyota build quality, and efficient performance for diverse travel requirements.",
-      image: "https://imgd.aeplcdn.com/1056x594/n/cw/ec/115145/rumion-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+      image: vehicleImages["rumion"],
       seats: 7,
       bags: 3,
       fuelType: "Petrol",
@@ -82,7 +103,7 @@ export default function Fleet() {
       name: "Maruti Dzire",
       category: "Bestseller",
       description: "India's most trusted compact sedan offering exceptional fuel efficiency, comfortable ride quality, spacious interiors, and proven reliability, making it the preferred choice for daily commuting.",
-      image: "https://imgd.aeplcdn.com/1056x594/n/cw/ec/174809/dzire-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+      image: vehicleImages["maruti-dzire"],
       seats: 5,
       bags: 2,
       fuelType: "Petrol",
