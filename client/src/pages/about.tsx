@@ -1,6 +1,8 @@
 import { Users, Award, Shield, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import indianChauffeurImage from "@assets/generated_images/Indian_professional_chauffeur_42d976b7.png";
+import indianMaintenanceImage from "@assets/generated_images/Indian_maintenance_team_c61e12cc.png";
 
 export default function About() {
   const stats = [
@@ -190,7 +192,7 @@ export default function About() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center p-6 bg-gray-50 rounded-xl">
               <img
-                src="/attached_assets/generated_images/Indian_professional_chauffeur_42d976b7.png"
+                src={indianChauffeurImage}
                 alt="Indian professional chauffeur in uniform"
                 className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
               />
@@ -216,7 +218,7 @@ export default function About() {
 
             <div className="text-center p-6 bg-gray-50 rounded-xl">
               <img
-                src="/attached_assets/generated_images/Indian_maintenance_team_c61e12cc.png"
+                src={indianMaintenanceImage}
                 alt="Indian vehicle maintenance specialists"
                 className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
               />
