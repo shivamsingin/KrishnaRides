@@ -98,7 +98,7 @@ export default function Fleet() {
       <section className="py-20 bg-gradient-to-r from-krishna-black to-krishna-gray text-white">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="font-bold text-5xl mb-6">Our Premium Fleet</h1>
+            <h1 className="font-bold text-5xl mb-6 text-gray-800">Our Premium Fleet</h1>
             <p className="text-xl text-gray-800 mb-8">
               Discover our extensive range of well-maintained vehicles designed to meet diverse transportation needs. 
               From fuel-efficient sedans to luxury SUVs, each vehicle in our fleet is regularly serviced and sanitized 
@@ -230,7 +230,7 @@ export default function Fleet() {
       {/* Booking CTA */}
       <section className="py-20 bg-krishna-black text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-bold text-4xl mb-6">Ready to Book Your Perfect Vehicle?</h2>
+          <h2 className="font-bold text-4xl mb-6 text-gray-800">Ready to Book Your Perfect Vehicle?</h2>
           <p className="text-xl text-gray-800 mb-8 max-w-3xl mx-auto">
             Choose from our extensive fleet of premium vehicles and experience the difference of professional 
             chauffeur-driven transportation. Book now for immediate availability or schedule your future travels with confidence.

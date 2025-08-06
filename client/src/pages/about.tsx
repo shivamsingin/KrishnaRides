@@ -39,7 +39,7 @@ export default function About() {
       <section className="py-20 bg-gradient-to-r from-krishna-black to-krishna-gray text-white">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="font-bold text-5xl mb-6">About Krishna Cabs Pvt Ltd</h1>
+            <h1 className="font-bold text-5xl mb-6 text-gray-800">About Krishna Cabs Pvt Ltd</h1>
             <p className="text-xl text-gray-800 mb-8">
               Established with a vision to provide exceptional transportation services, Krishna Cabs Pvt Ltd has been 
               serving the business community of Ahmedabad and Gujarat with professional chauffeur-driven car rental services. 
@@ -238,7 +238,7 @@ export default function About() {
       {/* CTA Section */}
       <section className="py-20 bg-krishna-black text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-bold text-4xl mb-6">Experience the Krishna Cabs Difference</h2>
+          <h2 className="font-bold text-4xl mb-6 text-gray-800">Experience the Krishna Cabs Difference</h2>
           <p className="text-xl text-gray-800 mb-8 max-w-3xl mx-auto">
             Join hundreds of satisfied customers who trust Krishna Cabs for their transportation needs. 
             Experience professional service, reliable vehicles, and exceptional customer care.

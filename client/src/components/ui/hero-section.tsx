@@ -19,7 +19,7 @@ export default function HeroSection() {
           {/* Hero Content */}
           <div className="text-white">
             <p className="text-krishna-gold font-medium mb-4">Welcome To Krishna Cabs!</p>
-            <h1 className="font-bold text-5xl mb-6 leading-tight">
+            <h1 className="font-bold text-5xl mb-6 leading-tight text-gray-800">
               Your Business Travel Support
             </h1>
             <p className="text-xl mb-8 text-gray-800">
