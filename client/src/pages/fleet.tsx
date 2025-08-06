@@ -99,7 +99,7 @@ export default function Fleet() {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="font-bold text-5xl mb-6">Our Premium Fleet</h1>
-            <p className="text-xl text-gray-200 mb-8">
+            <p className="text-xl text-gray-100 mb-8">
               Discover our extensive range of well-maintained vehicles designed to meet diverse transportation needs. 
               From fuel-efficient sedans to luxury SUVs, each vehicle in our fleet is regularly serviced and sanitized 
               to ensure the highest standards of safety, comfort, and reliability for our valued customers. Our professional 
