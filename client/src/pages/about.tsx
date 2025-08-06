@@ -232,7 +232,7 @@ export default function About() {
       {/* CTA Section */}
       <section className="py-20 bg-krishna-black text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-bold text-4xl mb-6 text-gray-800">Experience the Krishna Cabs Difference</h2>
+          <h2 className="font-bold text-4xl mb-6 text-[#ffffff]">Experience the Krishna Cabs Difference</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto text-[#ffffff]">
             Join hundreds of satisfied customers who trust Krishna Cabs for their transportation needs. 
             Experience professional service, reliable vehicles, and exceptional customer care.
