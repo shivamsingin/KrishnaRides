@@ -13,13 +13,12 @@ export default function HeroSection() {
           className="w-full h-full object-cover"
         />
       </div>
-
       <div className="relative container mx-auto px-4 py-32">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Hero Content */}
           <div className="text-white">
             <p className="text-krishna-gold font-medium mb-4">Welcome To Krishna Cabs!</p>
-            <h1 className="font-bold text-5xl mb-6 leading-tight text-gray-800">
+            <h1 className="font-bold text-5xl mb-6 leading-tight text-[#ffffff] bg-[#00000075]">
               Your Business Travel Support
             </h1>
             <p className="text-xl mb-8 text-gray-800">
