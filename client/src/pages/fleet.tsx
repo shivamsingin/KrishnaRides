@@ -231,7 +231,7 @@ export default function Fleet() {
       <section className="py-20 bg-krishna-black text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-bold text-4xl mb-6">Ready to Book Your Perfect Vehicle?</h2>
-          <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-100 mb-8 max-w-3xl mx-auto">
             Choose from our extensive fleet of premium vehicles and experience the difference of professional 
             chauffeur-driven transportation. Book now for immediate availability or schedule your future travels with confidence.
           </p>
