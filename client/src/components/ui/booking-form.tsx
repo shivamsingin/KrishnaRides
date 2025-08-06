@@ -21,10 +21,11 @@ const bookingSchema = z.object({
   date: z.string()
     .min(1, "Date is required")
     .refine((date) => {
-      const selectedDate = new Date(date);
+      // Handle both YYYY-MM-DD (input format) and DD/MM/YYYY (display format)
+      const dateValue = new Date(date);
       const today = new Date();
       today.setHours(0, 0, 0, 0);
-      return selectedDate >= today;
+      return !isNaN(dateValue.getTime()) && dateValue >= today;
     }, "Date cannot be in the past"),
   time: z.string()
     .min(1, "Time is required")
@@ -51,6 +52,16 @@ export default function BookingForm() {
   const onSubmit = async (data: BookingFormData) => {
     setIsSubmitting(true);
     
+    // Format date to Indian format for email
+    const formatDateToIndian = (dateStr) => {
+      const date = new Date(dateStr);
+      return date.toLocaleDateString('en-IN', {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric'
+      });
+    };
+
     // Create email body with booking data
     const emailSubject = `New Booking Request - ${data.serviceType}`;
     const emailBody = `
@@ -62,7 +73,7 @@ Service Type: ${data.serviceType}
 Vehicle Type: ${data.vehicleType}
 Pickup Location: ${data.pickupLocation}
 Drop Location: ${data.dropLocation}
-Date: ${data.date}
+Date: ${formatDateToIndian(data.date)}
 Time: ${data.time}
 
 Please contact the customer promptly to confirm availability and provide booking details.
@@ -190,6 +201,7 @@ Krishna Cabs Website
                       <Input 
                         type="date" 
                         min={new Date().toISOString().split('T')[0]}
+                        placeholder="DD/MM/YYYY"
                         {...field} 
                       />
                     </FormControl>
