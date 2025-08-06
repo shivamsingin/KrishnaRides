@@ -2,7 +2,7 @@
 
 ## Overview
 
-Krishna Cabs Pvt Ltd is a premium car rental service application built for business professionals in Ahmedabad, Gujarat. The application provides chauffeur-driven car rental services, airport transfers, city transportation, and outstation travel solutions. It features a modern React-based frontend with a professional design system, form handling for bookings and contact inquiries, and a Node.js Express backend for API management.
+Krishna Cabs Pvt Ltd is a premium car rental service application built for business professionals in Ahmedabad, Gujarat. The application provides chauffeur-driven car rental services, airport transfers, city transportation, and outstation travel solutions. It features a modern React-based frontend with a professional design system, comprehensive form handling with Indian date formatting, feedback collection system, and culturally appropriate imagery showcasing Indian professionals. The Node.js Express backend manages API operations with email integration for inquiries and feedback.
 
 ## User Preferences
 
@@ -73,6 +73,14 @@ Preferred communication style: Simple, everyday language.
 - **TypeScript**: Full TypeScript configuration with strict type checking enabled
 
 ### Third-Party Integrations
-- **Image Hosting**: Unsplash integration for high-quality vehicle and service imagery
+- **Image Assets**: AI-generated copyright-free images for corporate service scenes, Indian professional staff (chauffeurs, maintenance team)
 - **Font Loading**: Google Fonts integration for Poppins and Inter typography
+- **Email Integration**: Mailto functionality for contact forms, booking inquiries, and customer feedback
 - **Development Environment**: Replit-specific development banner and error overlay plugins
+
+## Recent Changes (January 2025)
+- **Enhanced Form Validation**: Added comprehensive Zod validation with Indian date formatting (DD/MM/YYYY), input constraints, and descriptive error messages
+- **Travel Date Integration**: Added optional travel date and time fields to contact form matching booking form functionality
+- **Feedback System**: Implemented customer feedback form with star ratings and email integration on contact page
+- **Cultural Localization**: Replaced generic stock images with AI-generated Indian professional staff imagery
+- **Email Formatting**: All form submissions format dates in Indian DD/MM/YYYY format for local relevance
