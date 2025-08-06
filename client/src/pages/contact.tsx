@@ -38,29 +38,40 @@ export default function Contact() {
 
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
+    
+    // Create email body with form data
+    const emailSubject = `New Contact Form Submission from ${data.firstName} ${data.lastName}`;
+    const emailBody = `
+Dear Krishna Cabs Support Team,
 
-      const result = await response.json();
+You have received a new contact form submission with the following details:
 
-      if (result.success) {
-        alert("Thank you for your message! We will contact you shortly.");
-        form.reset();
-      } else {
-        alert(result.message || "There was an error sending your message. Please try again.");
-      }
-    } catch (error) {
-      console.error("Contact form error:", error);
-      alert("There was an error sending your message. Please try again.");
-    } finally {
+Name: ${data.firstName} ${data.lastName}
+Email: ${data.email}
+Phone: ${data.phone}
+Service Required: ${data.serviceRequired}
+
+Message:
+${data.message}
+
+Please contact the customer promptly to assist with their requirements.
+
+Best regards,
+Krishna Cabs Website
+    `.trim();
+
+    // Create mailto URL
+    const mailtoUrl = `mailto:support@krishnacabspvtltd.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+    
+    // Open user's email client
+    window.location.href = mailtoUrl;
+    
+    // Show success message and reset form
+    setTimeout(() => {
+      alert("Your email client should have opened with the message pre-filled. Please send the email to complete your inquiry.");
+      form.reset();
       setIsSubmitting(false);
-    }
+    }, 1000);
   };
 
   const contactInfo = [
@@ -73,7 +84,7 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email",
-      value: "info@krishnacabs.com",
+      value: "support@krishnacabspvtltd.com",
       description: "Send us your requirements and we'll respond quickly"
     },
     {
@@ -353,9 +364,13 @@ export default function Contact() {
                       WhatsApp Booking
                     </Button>
                     
-                    <Button variant="outline" className="w-full">
+                    <Button 
+                      variant="outline" 
+                      className="w-full"
+                      onClick={() => window.location.href = 'mailto:support@krishnacabspvtltd.com'}
+                    >
                       <Mail className="w-4 h-4 mr-2" />
-                      Email: info@krishnacabs.com
+                      Email: support@krishnacabspvtltd.com
                     </Button>
                   </div>
                 </CardContent>

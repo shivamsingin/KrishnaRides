@@ -37,29 +37,39 @@ export default function BookingForm() {
 
   const onSubmit = async (data: BookingFormData) => {
     setIsSubmitting(true);
-    try {
-      const response = await fetch('/api/booking', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
+    
+    // Create email body with booking data
+    const emailSubject = `New Booking Request - ${data.serviceType}`;
+    const emailBody = `
+Dear Krishna Cabs Support Team,
 
-      const result = await response.json();
+You have received a new booking request with the following details:
 
-      if (result.success) {
-        alert("Thank you for your booking request! We will contact you shortly with available options.");
-        form.reset();
-      } else {
-        alert(result.message || "There was an error submitting your booking. Please try again.");
-      }
-    } catch (error) {
-      console.error("Booking error:", error);
-      alert("There was an error submitting your booking. Please try again.");
-    } finally {
+Service Type: ${data.serviceType}
+Vehicle Type: ${data.vehicleType}
+Pickup Location: ${data.pickupLocation}
+Drop Location: ${data.dropLocation}
+Date: ${data.date}
+Time: ${data.time}
+
+Please contact the customer promptly to confirm availability and provide booking details.
+
+Best regards,
+Krishna Cabs Website
+    `.trim();
+
+    // Create mailto URL
+    const mailtoUrl = `mailto:support@krishnacabspvtltd.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+    
+    // Open user's email client
+    window.location.href = mailtoUrl;
+    
+    // Show success message and reset form
+    setTimeout(() => {
+      alert("Your email client should have opened with the booking request pre-filled. Please send the email to complete your booking inquiry.");
+      form.reset();
       setIsSubmitting(false);
-    }
+    }, 1000);
   };
 
   return (
