@@ -54,7 +54,7 @@ export default function Home() {
       name: "Honda City",
       category: "Executive",
       description: "Premium sedan perfect for executive travel and business meetings, offering refined comfort, advanced features, excellent fuel efficiency, and sophisticated design for professional image and comfort.",
-      image: "https://imgd.aeplcdn.com/1056x594/n/cw/ec/134287/city-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+      image: "@assets/960px-2019_Honda_City_SV_1754492139176.jpg",
       seats: 5,
       bags: 2,
       fuelType: "Petrol",
