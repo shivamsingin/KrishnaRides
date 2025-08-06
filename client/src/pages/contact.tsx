@@ -114,18 +114,12 @@ Krishna Cabs Website
               with all your business travel needs in Ahmedabad and across Gujarat. We provide personalized service 
               and quick response times to ensure your transportation requirements are met efficiently.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <Button 
                 className="bg-krishna-gold text-gray-900 hover:bg-yellow-500 px-8 py-4 text-lg"
                 onClick={() => window.open('tel:+917048472472', '_self')}
               >
                 Call Now: +91 70484 72472
-              </Button>
-              <Button 
-                variant="outline" 
-                className="border-2 border-krishna-gold text-krishna-gold hover:bg-krishna-gold hover:text-krishna-black px-8 py-4 text-lg"
-              >
-                WhatsApp Us
               </Button>
             </div>
           </div>
