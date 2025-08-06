@@ -20,7 +20,7 @@ const vehicleImages = {
   "honda-amaze": "https://imgd.aeplcdn.com/1056x594/n/cw/ec/183381/amaze-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
   
   // Maruti Models
-  "maruti-ertiga": "https://imgd.aeplcdn.com/1056x594/n/cw/ec/54399/ertiga-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+  "maruti-ertiga": "https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:265561bc-ef08-4c21-adb0-207a8cf1bd75/as/Dynamic-Chrome-Winged-Front-Grille_2560x1440.jpg?height=1440&width=750&id=1&preferwebp=true", // Official Maruti Suzuki image
   "maruti-dzire": "https://www.marutisuzuki.com/corporate/media/press-releases/2024/november/-/media/B130CE5AA61242A9BD400C3F9E1D2B96.ashx", // Official Maruti Suzuki image
   
   // Hyundai Models
