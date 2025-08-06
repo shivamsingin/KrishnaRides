@@ -13,7 +13,7 @@ const vehicleImages = {
   // Toyota Models
   "innova-hycross": "https://static3.toyotabharat.com/images/showroom/innova-hycross/performance-img05.webp",
   "innova-crysta": "https://static3.toyotabharat.com/images/showroom/innova-mmc/unmatched-design1600x1000.jpg", // Official Toyota India image
-  "rumion": "https://static3.toyotabharat.com/images/showroom/rumion/home-banner-1920x807.jpg", // Official Toyota India image
+  "rumion": "https://static3.toyotabharat.com/images/showroom/rumion/style-img02.jpg", // Official Toyota India image
   
   // Honda Models
   "honda-city": "https://www.hondacarindia.com/_next/image?url=https%3A%2F%2Fwww.hondacarindia.com%2Fweb-data%2Fmodels%2F2023%2Fcity5thGen%2FExperience%2FColors%2B%2FColors%2FDesktop%2FAr_Vk_Honda-City_3TX_Front-3-4th-Studio-Shot_Lunar-Silver-Metallic_V2.png&w=3840&q=75", // Official Honda India image
