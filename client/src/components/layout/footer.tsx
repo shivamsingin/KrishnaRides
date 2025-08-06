@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Facebook, Instagram, Linkedin, MessageCircle } from "lucide-react";
+
 import logoImage from "@assets/logo_1754260864219.jpg";
 
 export default function Footer() {
@@ -24,20 +24,7 @@ export default function Footer() {
               Premium car rental services for business professionals in Ahmedabad and across Gujarat. 
               Your trusted partner for reliable and comfortable transportation.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-krishna-gold hover:text-white transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-krishna-gold hover:text-white transition-colors">
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-krishna-gold hover:text-white transition-colors">
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-krishna-gold hover:text-white transition-colors">
-                <MessageCircle className="w-5 h-5" />
-              </a>
-            </div>
+
           </div>
 
           {/* Quick Links */}
