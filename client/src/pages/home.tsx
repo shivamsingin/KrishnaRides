@@ -44,7 +44,7 @@ export default function Home() {
       name: "Toyota Innova Crysta",
       category: "Popular",
       description: "The trusted choice for business travel featuring robust build quality, comfortable seating, excellent road presence, and proven reliability for both city commuting and outstation journeys across Gujarat.",
-      image: "https://images.pexels.com/photos/274974/pexels-photo-274974.jpeg?auto=compress&cs=tinysrgb&w=800&h=600",
+      image: "https://cdn.pixabay.com/photo/2019/08/22/02/35/toyota-4422348_1280.jpg",
       seats: 7,
       bags: 3,
       fuelType: "Diesel",
