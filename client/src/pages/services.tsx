@@ -2,7 +2,7 @@ import { Car, Plane, MapPin, Route, Clock, Shield, Users, Award } from "lucide-r
 import ServiceCard from "@/components/ui/service-card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import corporateServiceImage from "@assets/generated_images/Corporate_cab_service_scene_bcd67fe5.png";
+import corporateServiceImage from "@assets/generated_images/Indian_corporate_service_scene_8617ad0e.png";
 
 export default function Services() {
   const mainServices = [

@@ -195,8 +195,8 @@ export default function About() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center p-6 bg-gray-50 rounded-xl">
               <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-                alt="Professional chauffeur team member"
+                src="/attached_assets/generated_images/Indian_professional_chauffeur_42d976b7.png"
+                alt="Indian professional chauffeur in uniform"
                 className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
               />
               <h4 className="font-semibold text-xl text-krishna-black mb-2">Professional Chauffeurs</h4>
@@ -221,8 +221,8 @@ export default function About() {
 
             <div className="text-center p-6 bg-gray-50 rounded-xl">
               <img
-                src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"
-                alt="Vehicle maintenance specialist"
+                src="/attached_assets/generated_images/Indian_maintenance_team_c61e12cc.png"
+                alt="Indian vehicle maintenance specialists"
                 className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
               />
               <h4 className="font-semibold text-xl text-krishna-black mb-2">Maintenance Team</h4>
