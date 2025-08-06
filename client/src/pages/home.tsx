@@ -34,7 +34,7 @@ export default function Home() {
       name: "Toyota Innova Hycross",
       category: "Premium",
       description: "The latest hybrid MPV offering exceptional fuel efficiency, spacious seating for seven passengers, advanced safety features, and premium comfort for long-distance business travel and family outings.",
-      image: "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
       seats: 7,
       bags: 3,
       fuelType: "Hybrid",
