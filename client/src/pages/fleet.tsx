@@ -12,7 +12,7 @@ import { Link } from "wouter";
 const vehicleImages = {
   // Toyota Models
   "innova-hycross": "https://static3.toyotabharat.com/images/showroom/innova-hycross/performance-img05.webp",
-  "innova-crysta": "https://imgd.aeplcdn.com/1056x594/n/cw/ec/26730/innova-crysta-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+  "innova-crysta": "https://static3.toyotabharat.com/images/showroom/innova-mmc/unmatched-design1600x1000.jpg", // Official Toyota India image
   "rumion": "https://static3.toyotabharat.com/images/showroom/rumion/home-banner-1920x807.jpg", // Official Toyota India image
   
   // Honda Models
