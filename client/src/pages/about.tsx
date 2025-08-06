@@ -54,7 +54,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
       {/* Company Story */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -102,7 +101,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
       {/* Statistics */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -123,7 +121,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
       {/* Company Values */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -147,7 +144,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
       {/* Mission & Vision */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -180,7 +176,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
       {/* Team Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -234,12 +229,11 @@ export default function About() {
           </div>
         </div>
       </section>
-
       {/* CTA Section */}
       <section className="py-20 bg-krishna-black text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-bold text-4xl mb-6 text-gray-800">Experience the Krishna Cabs Difference</h2>
-          <p className="text-xl text-gray-800 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl mb-8 max-w-3xl mx-auto text-[#ffffff]">
             Join hundreds of satisfied customers who trust Krishna Cabs for their transportation needs. 
             Experience professional service, reliable vehicles, and exceptional customer care.
           </p>
