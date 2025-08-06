@@ -108,7 +108,7 @@ Krishna Cabs Website
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="font-bold text-5xl mb-6">Contact Krishna Cabs</h1>
-            <p className="text-xl text-white mb-8">
+            <p className="text-xl text-gray-800 mb-8">
               Ready to experience premium car rental services? Get in touch with us for bookings, inquiries, 
               or custom transportation solutions. Our dedicated customer service team is available 24/7 to assist 
               with all your business travel needs in Ahmedabad and across Gujarat. We provide personalized service 

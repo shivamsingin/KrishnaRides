@@ -57,7 +57,7 @@ export default function Services() {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="font-bold text-5xl mb-6">Our Premium Services</h1>
-            <p className="text-xl text-white mb-8">
+            <p className="text-xl text-gray-800 mb-8">
               Krishna Cabs Pvt Ltd provides comprehensive car rental and chauffeur services across Ahmedabad and Gujarat. 
               Our professional transportation solutions cater to business executives, corporate travelers, and individuals 
               seeking reliable, comfortable, and punctual travel experiences. With a focus on safety, comfort, and customer 
