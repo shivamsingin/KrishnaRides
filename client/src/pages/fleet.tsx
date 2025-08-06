@@ -13,7 +13,7 @@ export default function Fleet() {
       seats: 7,
       bags: 3,
       fuelType: "Hybrid",
-      pricePerKm: 28,
+
       categoryColor: "bg-orange-500"
     },
     {
@@ -24,7 +24,7 @@ export default function Fleet() {
       seats: 7,
       bags: 3,
       fuelType: "Diesel",
-      pricePerKm: 18,
+
       categoryColor: "bg-green-500"
     },
     {
@@ -35,7 +35,7 @@ export default function Fleet() {
       seats: 5,
       bags: 2,
       fuelType: "Petrol",
-      pricePerKm: 16,
+
       categoryColor: "bg-blue-500"
     },
     {
@@ -46,7 +46,6 @@ export default function Fleet() {
       seats: 5,
       bags: 2,
       fuelType: "Petrol",
-      pricePerKm: 14,
       categoryColor: "bg-green-600"
     },
     {
@@ -57,7 +56,6 @@ export default function Fleet() {
       seats: 7,
       bags: 2,
       fuelType: "Petrol",
-      pricePerKm: 14,
       categoryColor: "bg-purple-500"
     },
     {
@@ -68,7 +66,6 @@ export default function Fleet() {
       seats: 5,
       bags: 2,
       fuelType: "Petrol",
-      pricePerKm: 13,
       categoryColor: "bg-red-500"
     },
     {
@@ -79,7 +76,6 @@ export default function Fleet() {
       seats: 7,
       bags: 3,
       fuelType: "Petrol",
-      pricePerKm: 15,
       categoryColor: "bg-teal-500"
     },
     {
@@ -90,7 +86,6 @@ export default function Fleet() {
       seats: 5,
       bags: 2,
       fuelType: "Petrol",
-      pricePerKm: 12,
       categoryColor: "bg-orange-500"
     }
   ];

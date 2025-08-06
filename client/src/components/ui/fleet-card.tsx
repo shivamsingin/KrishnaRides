@@ -12,7 +12,7 @@ interface FleetCardProps {
   seats: number;
   bags: number;
   fuelType: string;
-  pricePerKm: number;
+
   categoryColor?: string;
 }
 
@@ -24,7 +24,7 @@ export default function FleetCard({
   seats,
   bags,
   fuelType,
-  pricePerKm,
+
   categoryColor = "bg-blue-500"
 }: FleetCardProps) {
   return (
@@ -59,12 +59,9 @@ export default function FleetCard({
           </span>
         </div>
         
-        <div className="flex items-center justify-between">
-          <span className="text-2xl font-bold text-krishna-black">
-            ₹{pricePerKm}/km
-          </span>
+        <div className="flex justify-center">
           <Link href="/contact">
-            <Button className="bg-krishna-gold text-krishna-black hover:bg-yellow-500">
+            <Button className="bg-krishna-gold text-krishna-black hover:bg-yellow-500 w-full">
               Book Now
             </Button>
           </Link>

@@ -28,7 +28,7 @@ export default function Header() {
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-krishna-black/95 backdrop-blur-sm shadow-lg' : 'bg-krishna-black'
+      isScrolled ? 'bg-krishna-black shadow-lg' : 'bg-krishna-black'
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
@@ -98,10 +98,13 @@ export default function Header() {
                   {item.label}
                 </Link>
               ))}
-              <div className="flex items-center text-krishna-gold font-semibold pt-2">
+              <button 
+                className="flex items-center text-krishna-gold font-semibold pt-2"
+                onClick={() => window.open('tel:+917048472472', '_self')}
+              >
                 <Phone className="w-4 h-4 mr-2" />
-                +91 90000 00103
-              </div>
+                +91 70484 72472
+              </button>
             </div>
           </div>
         )}
