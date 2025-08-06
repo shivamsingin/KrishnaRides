@@ -54,7 +54,7 @@ export default function Home() {
       name: "Honda City",
       category: "Executive",
       description: "Premium sedan perfect for executive travel and business meetings, offering refined comfort, advanced features, excellent fuel efficiency, and sophisticated design for professional image and comfort.",
-      image: "@assets/960px-2019_Honda_City_SV_1754492139176.jpg",
+      image: "https://www.hondacarindia.com/_next/image?url=https%3A%2F%2Fwww.hondacarindia.com%2Fweb-data%2Fmodels%2F2023%2Fcity5thGen%2FExperience%2FColors%2B%2FColors%2FDesktop%2FAr_Vk_Honda-City_3TX_Front-3-4th-Studio-Shot_Lunar-Silver-Metallic_V2.png&w=3840&q=75",
       seats: 5,
       bags: 2,
       fuelType: "Petrol",

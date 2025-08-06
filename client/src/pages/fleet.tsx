@@ -16,7 +16,7 @@ const vehicleImages = {
   "rumion": "https://imgd.aeplcdn.com/1056x594/n/cw/ec/115145/rumion-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
   
   // Honda Models
-  "honda-city": "@assets/960px-2019_Honda_City_SV_1754492139176.jpg", // Local asset - you can replace this file
+  "honda-city": "https://www.hondacarindia.com/_next/image?url=https%3A%2F%2Fwww.hondacarindia.com%2Fweb-data%2Fmodels%2F2023%2Fcity5thGen%2FExperience%2FColors%2B%2FColors%2FDesktop%2FAr_Vk_Honda-City_3TX_Front-3-4th-Studio-Shot_Lunar-Silver-Metallic_V2.png&w=3840&q=75", // Official Honda India image
   "honda-amaze": "https://imgd.aeplcdn.com/1056x594/n/cw/ec/183381/amaze-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
   
   // Maruti Models
