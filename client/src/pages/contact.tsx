@@ -394,7 +394,7 @@ Krishna Cabs Website
             {[
               {
                 question: "How can I book a cab?",
-                answer: "You can book through our website contact form, call us at +91 90000 00103, or send a WhatsApp message. We provide instant confirmation and 24/7 booking support."
+                answer: "You can book through our website contact form, call us at +91 70484 72472, or send a WhatsApp message. We provide instant confirmation and 24/7 booking support."
               },
               {
                 question: "What are your service areas?",
