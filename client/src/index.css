@@ -25,6 +25,7 @@
   --radius: 0.5rem;
   --krishna-gold: hsl(45, 100%, 50%);
   --krishna-black: hsl(0, 0%, 10%);
+  --krishna-dark: hsl(0, 0%, 5%);
   --krishna-gray: hsl(0, 0%, 20%);
 }
 
@@ -73,6 +74,14 @@
   
   .bg-krishna-gold {
     background-color: var(--krishna-gold);
+  }
+  
+  .text-krishna-dark {
+    color: var(--krishna-dark);
+  }
+  
+  .text-gray-900 {
+    color: #111827;
   }
   
   .text-krishna-black {

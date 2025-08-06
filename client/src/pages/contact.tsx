@@ -116,7 +116,7 @@ Krishna Cabs Website
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
-                className="bg-krishna-gold text-krishna-black hover:bg-yellow-500 px-8 py-4 text-lg"
+                className="bg-krishna-gold text-gray-900 hover:bg-yellow-500 px-8 py-4 text-lg"
                 onClick={() => window.open('tel:+917048472472', '_self')}
               >
                 Call Now: +91 70484 72472
@@ -294,7 +294,7 @@ Krishna Cabs Website
 
                     <Button
                       type="submit"
-                      className="w-full bg-krishna-gold text-krishna-black hover:bg-yellow-500"
+                      className="w-full bg-krishna-gold text-gray-900 hover:bg-yellow-500"
                       disabled={isSubmitting}
                     >
                       {isSubmitting ? "Sending Message..." : "Send Message"}
@@ -352,7 +352,7 @@ Krishna Cabs Website
                   
                   <div className="space-y-4">
                     <Button 
-                      className="w-full bg-krishna-gold text-krishna-black hover:bg-yellow-500"
+                      className="w-full bg-krishna-gold text-gray-900 hover:bg-yellow-500"
                       onClick={() => window.open('tel:+917048472472', '_self')}
                     >
                       <Phone className="w-4 h-4 mr-2" />

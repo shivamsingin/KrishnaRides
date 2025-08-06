@@ -190,7 +190,7 @@ Krishna Cabs Website
 
             <Button
               type="submit"
-              className="w-full bg-krishna-gold text-krishna-black hover:bg-yellow-500"
+              className="w-full bg-krishna-gold text-gray-900 hover:bg-yellow-500"
               disabled={isSubmitting}
             >
               {isSubmitting ? "Searching..." : "Search Available Cars"}

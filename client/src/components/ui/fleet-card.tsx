@@ -61,7 +61,7 @@ export default function FleetCard({
         
         <div className="flex justify-center">
           <Link href="/contact">
-            <Button className="bg-krishna-gold text-krishna-black hover:bg-yellow-500 w-full">
+            <Button className="bg-krishna-gold text-gray-900 hover:bg-yellow-500 w-full">
               Book Now
             </Button>
           </Link>

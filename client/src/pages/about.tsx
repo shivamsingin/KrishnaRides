@@ -47,7 +47,7 @@ export default function About() {
               executives, corporate travelers, and individuals seeking reliable transportation solutions.
             </p>
             <Link href="/contact">
-              <Button className="bg-krishna-gold text-krishna-black hover:bg-yellow-500 px-8 py-4 text-lg">
+              <Button className="bg-krishna-gold text-gray-900 hover:bg-yellow-500 px-8 py-4 text-lg">
                 Get In Touch
               </Button>
             </Link>
@@ -245,7 +245,7 @@ export default function About() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
-              <Button className="bg-krishna-gold text-krishna-black hover:bg-yellow-500 px-8 py-4 text-lg">
+              <Button className="bg-krishna-gold text-gray-900 hover:bg-yellow-500 px-8 py-4 text-lg">
                 Book Your First Ride
               </Button>
             </Link>

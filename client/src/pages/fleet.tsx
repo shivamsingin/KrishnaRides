@@ -106,7 +106,7 @@ export default function Fleet() {
               chauffeurs are trained to provide exceptional service while maintaining the pristine condition of every vehicle.
             </p>
             <Link href="/contact">
-              <Button className="bg-krishna-gold text-krishna-black hover:bg-yellow-500 px-8 py-4 text-lg">
+              <Button className="bg-krishna-gold text-gray-900 hover:bg-yellow-500 px-8 py-4 text-lg">
                 Book Your Vehicle
               </Button>
             </Link>
@@ -210,7 +210,7 @@ export default function Fleet() {
               </div>
               
               <Link href="/about">
-                <Button className="bg-krishna-gold text-krishna-black hover:bg-yellow-500">
+                <Button className="bg-krishna-gold text-gray-900 hover:bg-yellow-500">
                   Learn More About Our Standards
                 </Button>
               </Link>
@@ -237,7 +237,7 @@ export default function Fleet() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
-              <Button className="bg-krishna-gold text-krishna-black hover:bg-yellow-500 px-8 py-4 text-lg">
+              <Button className="bg-krishna-gold text-gray-900 hover:bg-yellow-500 px-8 py-4 text-lg">
                 Book Now
               </Button>
             </Link>

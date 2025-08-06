@@ -64,7 +64,7 @@ export default function Services() {
               satisfaction, we have established ourselves as the premier choice for luxury car rentals in the region.
             </p>
             <Link href="/contact">
-              <Button className="bg-krishna-gold text-krishna-black hover:bg-yellow-500 px-8 py-4 text-lg">
+              <Button className="bg-krishna-gold text-gray-900 hover:bg-yellow-500 px-8 py-4 text-lg">
                 Book Your Service
               </Button>
             </Link>

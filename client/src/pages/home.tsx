@@ -124,7 +124,7 @@ export default function Home() {
 
           <div className="text-center mt-12">
             <Link href="/fleet">
-              <Button className="bg-krishna-gold text-krishna-black hover:bg-yellow-500 px-8 py-3 text-lg">
+              <Button className="bg-krishna-gold text-gray-900 hover:bg-yellow-500 px-8 py-3 text-lg">
                 View Complete Fleet
               </Button>
             </Link>
