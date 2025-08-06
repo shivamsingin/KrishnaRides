@@ -2,6 +2,7 @@ import { Car, Plane, MapPin, Route, Clock, Shield, Users, Award } from "lucide-r
 import ServiceCard from "@/components/ui/service-card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import corporateServiceImage from "@assets/generated_images/Corporate_cab_service_scene_bcd67fe5.png";
 
 export default function Services() {
   const mainServices = [
@@ -171,8 +172,8 @@ export default function Services() {
             
             <div>
               <img
-                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                alt="Gujarat map showing service coverage areas"
+                src={corporateServiceImage}
+                alt="Professional corporate car service with luxury vehicle and uniformed chauffeur"
                 className="rounded-xl shadow-lg w-full"
               />
             </div>
