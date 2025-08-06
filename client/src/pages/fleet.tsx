@@ -21,7 +21,7 @@ const vehicleImages = {
   
   // Maruti Models
   "maruti-ertiga": "https://imgd.aeplcdn.com/1056x594/n/cw/ec/54399/ertiga-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
-  "maruti-dzire": "https://imgd.aeplcdn.com/1056x594/n/cw/ec/174809/dzire-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+  "maruti-dzire": "https://www.marutisuzuki.com/corporate/media/press-releases/2024/november/-/media/B130CE5AA61242A9BD400C3F9E1D2B96.ashx", // Official Maruti Suzuki image
   
   // Hyundai Models
   "hyundai-aura": "https://imgd.aeplcdn.com/1056x594/n/cw/ec/45951/aura-exterior-right-front-three-quarter.jpeg?isig=0&q=80",

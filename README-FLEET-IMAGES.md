@@ -33,7 +33,7 @@ The Krishna Cabs fleet images are managed through the `vehicleImages` configurat
 - `honda-city` - Honda City (official Honda India image)
 - `honda-amaze` - Honda Amaze
 - `maruti-ertiga` - Maruti Ertiga
-- `maruti-dzire` - Maruti Dzire
+- `maruti-dzire` - Maruti Dzire (official Maruti Suzuki image)
 - `hyundai-aura` - Hyundai Aura
 
 ### Adding New Vehicles

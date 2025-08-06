@@ -64,7 +64,7 @@ export default function Home() {
       name: "Maruti Dzire",
       category: "Bestseller",
       description: "India's most trusted compact sedan offering exceptional fuel efficiency, comfortable ride quality, spacious interiors, and proven reliability, making it the preferred choice for daily commuting and business travel.",
-      image: "https://imgd.aeplcdn.com/1056x594/n/cw/ec/174809/dzire-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+      image: "https://www.marutisuzuki.com/corporate/media/press-releases/2024/november/-/media/B130CE5AA61242A9BD400C3F9E1D2B96.ashx",
       seats: 5,
       bags: 2,
       fuelType: "Petrol",
