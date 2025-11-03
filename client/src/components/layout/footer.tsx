@@ -12,12 +12,12 @@ export default function Footer() {
             <div className="flex items-center space-x-2 mb-4">
               <img 
                 src={logoImage} 
-                alt="Krishna Cabs Logo" 
+                alt="KCPL Logo" 
                 className="w-10 h-10 object-contain"
               />
               <div>
-                <h3 className="font-bold text-lg">Krishna Cabs</h3>
-                <p className="text-krishna-gold text-sm">Pvt Ltd</p>
+                <h3 className="font-bold text-lg">KCPL</h3>
+                <p className="text-krishna-gold text-sm">Krishna Cabs Pvt Ltd</p>
               </div>
             </div>
             <p className="text-gray-300 mb-4">

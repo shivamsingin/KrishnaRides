@@ -36,12 +36,12 @@ export default function Header() {
           <Link href="/" className="flex items-center space-x-2">
             <img 
               src={logoImage} 
-              alt="Krishna Cabs Logo" 
+              alt="KCPL Logo" 
               className="w-12 h-12 object-contain"
             />
             <div>
-              <h1 className="font-bold text-xl text-white">Krishna Cabs</h1>
-              <p className="text-krishna-gold text-sm">Pvt Ltd</p>
+              <h1 className="font-bold text-xl text-white">KCPL</h1>
+              <p className="text-krishna-gold text-sm">Krishna Cabs Pvt Ltd</p>
             </div>
           </Link>
 
