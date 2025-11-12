@@ -1,8 +1,4 @@
 name = "krishna-rides"
 compatibility_date = "2025-11-12"
 
-[build]
-command = "npm run build"
-
-[pages]
 pages_build_output_dir = "dist"
