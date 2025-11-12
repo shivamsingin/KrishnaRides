@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 
-import logoImage from "@assets/logo_1754260864219.jpg";
+import logoImage from "@assets/kcpl-logo.png";
 
 export default function Footer() {
   return (
